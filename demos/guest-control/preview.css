@@ -1,0 +1,36 @@
+/* The public preview keeps the supplied workspace and uses neutral sample data. */
+.portal-home header b { white-space: nowrap; }
+.portal-home header button { white-space: nowrap; }
+.portal-home main { min-width: 0; }
+.hub-project-grid { grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }
+.portal-home nav small { margin-top: 24px; }
+.hub-row-actions { flex-wrap: wrap; }
+.hub-enterprise { max-width: 100%; }
+.hub-enterprise label { min-width: 0; }
+.portal-home h1, .portal-home h3 { overflow-wrap: anywhere; }
+
+@media (max-width: 640px) {
+  .portal-home { display: flex; flex-direction: column; min-height: 100dvh; }
+  .portal-home header { flex-wrap: wrap; gap: 12px; padding: 16px; }
+  .portal-home header b { font-size: 16px; }
+  .portal-home header input { order: 3; width: 100%; margin: 0; }
+  .portal-home header button { margin-left: auto; font-size: 12px; }
+  .portal-home nav { flex-direction: row; flex-wrap: wrap; gap: 6px; padding: 10px 12px; border-right: 0; border-bottom: 1px solid #34414f; }
+  .portal-home nav strong, .portal-home nav small { display: none; }
+  .portal-home nav button { padding: 10px; font-size: 12px; }
+  .portal-home main { padding: 22px 16px; }
+  .portal-welcome { flex-direction: column; gap: 14px; margin-bottom: 24px; }
+  .portal-welcome h1 { font-size: 23px; }
+  .portal-welcome p { font-size: 12px; }
+  .portal-apps, .hub-project-grid { grid-template-columns: minmax(0, 1fr); }
+  .portal-home section { margin-bottom: 28px; }
+  .hub-enterprise { width: 100%; }
+  .hub-enterprise input { min-width: 0; }
+  .portal-project-art { gap: 14px; }
+  .portal-project-art span { font-size: 10px; letter-spacing: 1px; }
+  .brand small { display: none; }
+  .brand-mark { font-size: 24px; }
+  .header-right { gap: 4px; padding-right: 7px; }
+  .header-right .button { padding: 7px 5px; }
+  .header-right .button .icon { display: none; }
+}
